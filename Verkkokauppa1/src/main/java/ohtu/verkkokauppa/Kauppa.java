@@ -8,13 +8,6 @@ public class Kauppa {
     private VGenInterface viitegeneraattori;
     private String kaupanTili;
 
-    public Kauppa() {
-        varasto = Varasto.getInstance();
-        pankki = Pankki.getInstance();
-        viitegeneraattori = Viitegeneraattori.getInstance();
-        kaupanTili = "33333-44455";
-    }
-
     public Kauppa(VarastoInterface varasto, PankkiInterface pankki, VGenInterface viitegeneraattori) {
         this.varasto = varasto;
         this.pankki = pankki;
